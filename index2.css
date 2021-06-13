@@ -177,13 +177,11 @@ nav ul li a .quinto {
     height: auto;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.568);
-    display: flex;
-    width: 23%;
     border-radius: 10px;
-    margin: 3px;
     transition: all 400ms ease;
     box-shadow: 0px 1px  10px rgba(0,0,0,0.2);
     z-index: 5;
+    width: 95%;
 }
 
 .card:hover{
@@ -193,23 +191,27 @@ nav ul li a .quinto {
 
 .contenido{
     color: white;
+    width: 100%;
 }
 .contenido h3{
     text-align: center;
     width: 100%;
+    font-size: 1.2em;
 }
 .contenido p{
-    padding: 10px;
+    padding-left:5%;
+    margin-top:12%;
+    margin-right: 5%;
+    margin-bottom:10%;
     text-align:normal;
-    display: flex;
-    flex-wrap:wrap;
-    font-size: 100%;
+    font-size: 1em;
 }
 .contenido span{
-    display: block;
+    display:block;
     text-align: center;
     position: relative;
-    top: -6px;
+    position: relative;
+    top: -0.5em;
     width:70%;
     float: right;
     background: #8c004b;
@@ -224,18 +226,24 @@ nav ul li a .quinto {
 .nav ul{
     display: block;
 }
-.container{
-    width: 75%;
-    float: right;
+.grid{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+    overflow: visible;
+    gap: 10px;
+}
+.grid .container{
+    box-sizing: border-box;
+    width: 100%;
+    display: grid;
     margin-bottom: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 .nav{
-    width: 20%;
+    width: 100%;
     float: left;
     display: block;
-    margin-left: 20px;
-    background-color:rgba(0, 0, 0, 0.568);
-    border-radius: 20px;
     overflow: hidden;
 }
 .nav ul li a{
@@ -245,6 +253,8 @@ nav ul li a .quinto {
     text-align: start;
     color: white;
     text-decoration: none;
+    background-color:rgba(0, 0, 0, 0.568);
+    border-radius: 20px;
 }
 
 .nav ul li:hover a{
@@ -257,23 +267,15 @@ nav ul li a .quinto {
 }
 
 .fot {
-    margin-top: 16%;
     background-color: rgba(0, 0, 0, 0.568);
     text-align: center;
     color: white;
-    clear: both;
     display: block;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-top:30px;
 }
 
-
-.nav, footer, .container{
-    position: relative;
-    top: -140px;
-}
-
-html{
-    position: relative;
-    height:1250px;
+footer, .grid{
+    position:relative;
+    top: -120px;
 }
