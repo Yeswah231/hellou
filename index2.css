@@ -12,7 +12,7 @@
     line-height: 80px;
     color:white;
     text-align: center;
-    font-size:450%;
+    font-size:4em;
     font-family: 'Lucida Sans';
 }
 
@@ -86,6 +86,7 @@ nav > ul > li > a{
     position: relative;
     line-height: 20px;
     text-align: center;
+    font-size:1em;
 }
 
 nav > ul > li span{
